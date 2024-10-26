@@ -127,6 +127,7 @@ been missed!</string>
                         <outlet property="emailField" destination="pIS-bP-6oP" id="Xdq-TR-v8W"/>
                         <outlet property="passwordField" destination="i2F-6d-NVJ" id="7eO-Km-2GF"/>
                         <outlet property="switchButton" destination="01E-Kz-ApA" id="Qlp-5l-Hs3"/>
+                        <segue destination="VgU-9p-xSj" kind="show" id="E0U-FD-1xv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -244,6 +245,16 @@ been missed!</string>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YK7-NJ-36o">
+                                <rect key="frame" x="0.0" y="746" width="393" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="THM-hW-cui"/>
+                                    <tabBarItem title="Item" id="CoU-VR-mQt"/>
+                                    <tabBarItem systemItem="more" id="8oX-s7-JqL"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gco-fH-Ck1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -339,12 +350,12 @@ been missed!</string>
             </objects>
             <point key="canvasLocation" x="2687.7862595419847" y="776.76056338028172"/>
         </scene>
-        <!--City View Controller-->
+        <!--City-->
         <scene sceneID="doY-wj-BLI">
             <objects>
                 <viewController storyboardIdentifier="CityViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RvL-xN-AKr" customClass="CityViewController" customModule="MyCountryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j3Z-g0-SUg">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHk-lN-Ccb">
@@ -377,7 +388,10 @@ been missed!</string>
                         <viewLayoutGuide key="safeArea" id="oFs-Ca-Pnn"/>
                         <color key="backgroundColor" red="0.94509803920000002" green="0.95686274510000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="c7w-XE-Fgb"/>
+                    <navigationItem key="navigationItem" title="City" prompt="Aciqlama" id="c7w-XE-Fgb">
+                        <barButtonItem key="backBarButtonItem" title="Geri" id="jeV-wv-xKx"/>
+                        <barButtonItem key="leftBarButtonItem" title="Geri" id="Bdi-4M-gVg"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="Ge1-vE-mUI" id="bad-Dj-MXZ"/>
                         <outlet property="textLabel" destination="9CO-93-xM8" id="w9N-SP-E2R"/>
